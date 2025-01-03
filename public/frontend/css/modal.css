@@ -1,0 +1,141 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: rgba(20, 20, 20, 0.16);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    border-radius: 20px;
+    background: linear-gradient(
+      180deg,
+      #f4f3f1 0%,
+      #f2f2f0 20.11%,
+      #fafbfd 51.7%,
+      #fcfcfe 100%
+    );
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1386px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+    display: flex;
+    gap: 72px; /* Gap between image and text */
+    align-items: center;
+  }
+  
+  /* Image Section */
+  .modal-img {
+    width: 40%; /* Set the image section to 40% width */
+  }
+  
+  .modal-image img {
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Text Section */
+  .modal-text {
+    width: 60%; /* Set the text section to 60% width */
+  }
+  
+  /* Heading in Text Section */
+  .modal-text h2 {
+    color: #1c1919;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132%;
+    letter-spacing: -1px;
+    margin-bottom: 28px;
+  }
+  
+  /* Paragraph in Text Section */
+  .modal-text p {
+    color: var(--text-color, #252B42);
+    font-size: 24px;
+    line-height: 140%; 
+    margin-bottom: 28px;
+  }
+  
+  /* Form Styles */
+  .modal-form {
+    width: 100%;
+  }
+  
+ /* Subscription Input and Button */
+.form-group.subscribe {
+  display: flex;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.input-container input[type="email"] {
+  flex: 1;
+  display: flex;
+  height: 83.711px;
+  padding: 28.144px 27.567px 28.866px;
+  align-items: center;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 7.216px;
+border: 1.443px solid #E6E6E6;
+background: #FFF;
+  height: auto;
+}
+
+.input-container button {
+  background: #1c1919;
+  color: var(--light-text-color, #FFF);
+text-align: center;
+font-family: "B612 Mono";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; 
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 30px 30px 0;
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  padding: 28px 25px;
+}
+
+.input-container button:hover {
+  background: #333;
+}

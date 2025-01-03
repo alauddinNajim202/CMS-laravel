@@ -1,0 +1,137 @@
+/* commitment section styles */
+.commitment-section-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-block: 58px 120px;
+}
+.commitment-content h2 {
+  color: #1c1919;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 40px;
+}
+.commitment-content p {
+  color: #514c4c;
+  font-size: 20px;
+  line-height: 30px;
+}
+.commitment-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.commitment-heading h4 {
+  color: #1c1919;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.commitment-content .commitment-heading:nth-of-type(2) {
+  margin-top: 24px;
+}
+
+/* responsive styles */
+
+/* Large desktop devices */
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .commitment-section-container {
+    padding-inline: 16px;
+    gap: 24px;
+    margin-block: 24px;
+  }
+  .commitment-content h2 {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+  .commitment-content p {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .commitment-heading {
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .commitment-heading img {
+    width: auto;
+  }
+  .commitment-heading h4 {
+    font-size: 15px;
+    line-height: normal;
+  }
+}
+
+/* Large tablet devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .commitment-section-container {
+    padding-inline: 16px;
+    flex-direction: column;
+    gap: 60px;
+    margin-block: 24px;
+  }
+  .info-heading {
+    text-align: center;
+  }
+  .skills-experiences-container {
+    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+  }
+  .experience-section {
+    place-items: center;
+  }
+}
+
+/* Small devices and tablets */
+@media only screen and (max-width: 991px) {
+  .commitment-section-container {
+    padding-inline: 20px;
+    flex-direction: column;
+    gap: 24px;
+    margin-block: 24px;
+  }
+  .commitment-content h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+}
+
+/* Small devices */
+@media only screen and (max-width: 767px) {
+  .commitment-section-container {
+    padding-inline: 16px;
+  }
+  .commitment-section-container img {
+    width: 100%;
+  }
+  .commitment-content h2 {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .commitment-content p {
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+  }
+  .commitment-heading {
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .commitment-heading img {
+    width: auto;
+  }
+  .commitment-heading h4 {
+    font-size: 15px;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,215 @@
+.two-pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 50px 0;
+}
+
+.pricing-card {
+  border-radius: 30px;
+  border: 0.5px solid #545357;
+  background: #fff;
+  box-shadow: 1px 10px 50px 8px rgba(108, 126, 147, 0.1);
+  width: 478px;
+  height: 894px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.pricing-card-title {
+  text-align: center;
+  color: #1c1919;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.pricing-card-lists {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.pricing-card-lists img {
+  width: 20px;
+  height: 20px;
+}
+
+.pricing-card-lists p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+.pricing-card-desc {
+  text-align: center;
+  margin-block: 40px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+.pricing-card-duration {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pricing-card-duration img {
+  width: 20px;
+  height: 20px;
+}
+
+.pricing-card-duration p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.price-title {
+  text-align: center;
+  margin-top: 30px;
+  color: #1c1919;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.pricing-card-buttons-container {
+  width: 100%;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing-card-button {
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #1c1919;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.pricing-support-desc {
+  margin-top: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: -0.36px;
+}
+.three-pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 1365px) {
+  .two-pricing-cards {
+    padding: 24px 16px;
+  }
+  .three-pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 24px;
+    padding-top: 32px;
+    padding-inline: 16px;
+  }
+  .pricing-card {
+    width: 100%;
+    height: auto;
+  }
+  .pricing-card-button {
+    font-size: 14px;
+  }
+  .pricing-card-lists p {
+    font-size: 14px;
+  }
+  .pricing-card-desc {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .two-pricing-cards {
+    flex-direction: column;
+    align-self: center;
+    gap: 24px;
+    padding: 24px 16px;
+  }
+
+  .pricing-card {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .pricing-card-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .pricing-card-lists {
+    margin-top: 16px;
+  }
+
+  .pricing-card-lists p {
+    font-size: 14px;
+  }
+
+  .pricing-card-desc {
+    margin-block: 24px;
+    font-size: 14px;
+  }
+
+  .pricing-card-duration {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pricing-card-duration img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pricing-card-duration p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+  }
+  .price-title {
+    margin-top: 20px;
+  }
+
+  .pricing-card-buttons-container {
+    margin-top: 18px;
+    width: 100%;
+  }
+
+  .pricing-card-button {
+    padding: 16px 8px;
+    font-size: 14px;
+  }
+  .pricing-support-desc {
+    margin-top: 24px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+  .three-pricing-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    padding-top: 32px;
+    padding-inline: 16px;
+  }
+}
