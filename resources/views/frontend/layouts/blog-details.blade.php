@@ -28,11 +28,11 @@
 
         .newsletter a {
             padding: 0px;
-            font-size: 1rem;
-            color: #1c1b1b;
+            font-size: 12px;
+            color: #db1010;
             border-radius: 5.287px;
             background: white;
-            text-decoration: none;
+            text-decoration: underline !important;
             text-align: center;
             font-weight: 600;
             transition: background-color 0.3s;

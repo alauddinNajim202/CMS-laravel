@@ -84,13 +84,13 @@
 
     <!-- modal  -->
     <!-- Modal -->
-    <div id="downloadModal" class="modal" style="display: none;">
-        <div class="modal-content">
+    <div id="downloadModal" class="modal p-5" style="display: none;" >
+        <div class="modal-content" >
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <div class="modal-body">
                 <!-- Dynamic Image -->
                 <div class="modal-image">
-                    <img id="modal-tool-image" src="" alt="Tool Image" />
+                    <img  id="modal-tool-image" src="" alt="Tool Image" />
                 </div>
                 <!-- Dynamic Content -->
                 <div class="modal-text">
@@ -110,11 +110,11 @@
                                 <button type="submit">Continues</button>
                             </div>
                         </div>
-                        <div class=" ">
+                        <div style="margin-top: -50px; margin-bottom: 20px" class=" ">
                             <input type="checkbox" id="terms" name="terms" required />
-                            <label for="terms" style="font-size:16px !important">
+                            <label for="terms" style="font-size:14px !important">
 
-                                Accetto di ricevere e-mail a scopo informativo e commerciale.<a href="https://www.tax4doctors.it/privacy">Privacy & Cookies</a>, <a href="https://www.tax4doctors.it/condizioni-uso">Condizioni generali d'uso</a>
+                                Accetto di ricevere e-mail a scopo informativo e commerciale.<a style="color: red; text-decoration: underline !important" href="https://www.tax4doctors.it/privacy">Privacy & Cookies</a>, <a style="color: red; text-decoration: underline !important" href="https://www.tax4doctors.it/condizioni-uso">Condizioni generali d'uso</a>
                             </label>
                         </div>
                     </form>
@@ -123,43 +123,6 @@
         </div>
     </div>
 
-    {{-- <div id="downloadModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div class="modal-body">
-                <!-- Image Section -->
-                <div class="modal-image">
-                    <img src="./assets/images/tools-img.svg" alt="Tool Image" />
-                </div>
-                <!-- Content Section -->
-                <div class="modal-text">
-                    <h2>Excel Sheet With Calculator</h2>
-                    <p>
-                        Stay up to date with the latest articles and business updates.
-                        You'll even get special recommendations weekly.
-                    </p>
-                    <!-- Subscription Section -->
-                    <form id="subscribeForm" class="modal-form">
-                        <!-- Email Input with Button -->
-                        <div class="form-group subscribe">
-                            <div class="input-container">
-                                <input type="email" id="email" name="email" placeholder="Enter your email"
-                                    required />
-                                <button type="submit">Continue</button>
-                            </div>
-                        </div>
-                        <!-- Terms and Conditions -->
-                        <div class="form-group terms">
-                            <input type="checkbox" id="terms" name="terms" required />
-                            <label for="terms">
-                                I accept the <a href="#">terms and conditions</a>.
-                            </label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> --}}
 
 @endsection
 

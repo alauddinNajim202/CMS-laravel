@@ -2,6 +2,10 @@
     .footer ul li {
         margin-bottom: 10px !important;
     }
+
+    .copyright-container {
+        margin-top: 0px;
+    }
 </style>
 
 
@@ -16,7 +20,7 @@
                 businesses use Dail The fastest way.
             </p>
             <div class="social-icons">
-                <a href="#"><img src="{{ asset('frontend/images/icons/fb.svg') }} " alt="Facebook" /></a>
+                <a href="#"><img src="{{ asset('frontend/images/icons/linkedin.svg') }} " alt="Facebook" /></a>
                 <a href="#"><img src="{{ asset('frontend/images/icons/email.svg') }} " alt="Facebook" /></a>
             </div>
         </div>
