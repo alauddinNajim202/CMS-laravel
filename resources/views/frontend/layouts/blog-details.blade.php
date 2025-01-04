@@ -25,6 +25,18 @@
         p {
             font-size: 25px !important;
         }
+
+        .newsletter a {
+            padding: 0px;
+            font-size: 1rem;
+            color: #1c1b1b;
+            border-radius: 5.287px;
+            background: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
     </style>
 @endpush
 

@@ -14,8 +14,8 @@
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s;
-            border:none;
-            cursor:pointer;
+            border: none;
+            cursor: pointer;
         }
 
         #subscribe_btn:hover {
@@ -26,7 +26,17 @@
             font-size: 25px !important;
         }
 
-
+        .newsletter a {
+            padding: 0px;
+            font-size: 1rem;
+            color: #1c1b1b;
+            border-radius: 5.287px;
+            background: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
     </style>
 @endpush
 @section('content')
@@ -40,18 +50,20 @@
     </header>
 
     <!-- contact us section starts -->
-     <!-- subscribe to newsletter section -->
-     <section class="newsletter-container custom-container">
+    <!-- subscribe to newsletter section -->
+    <section class="newsletter-container custom-container">
         {{-- success message show --}}
 
         <div class="newsletter ">
             @if (session('success'))
-                <div style="text-align: center; padding: 10px; color: green" class="alert alert-success text-center text-success" style="color: green">
+                <div style="text-align: center; padding: 10px; color: green"
+                    class="alert alert-success text-center text-success" style="color: green">
                     {{ session('success') }}
                 </div>
             @endif
             <h2>Subscribe to our newsletter</h2>
-            <p style="font-size:16px !important">Stay updated with the latest news, special offers, and exclusive content. Join our newsletter today and never miss an update from us!</p>
+            <p style="font-size:16px !important">Stay updated with the latest news, special offers, and exclusive content.
+                Join our newsletter today and never miss an update from us!</p>
             <form action="{{ route('newsletter.subscribe') }}" method="post">
                 @csrf
                 <div class="form-container">
@@ -67,7 +79,9 @@
             </form>
             <p style="font-size:14px !important">
                 {{-- By clicking subscribe you're confirming that you agree with our Terms and Conditions. --}}
-                Accetto di ricevere e-mail a scopo informativo e commerciale.<a href="https://www.tax4doctors.it/privacy">Privacy & Cookies</a>, <a href="https://www.tax4doctors.it/condizioni-uso">Condizioni generali d'uso</a>
+                Accetto di ricevere e-mail a scopo informativo e commerciale.<a
+                    href="https://www.tax4doctors.it/privacy">Privacy & Cookies</a>, <a
+                    href="https://www.tax4doctors.it/condizioni-uso">Condizioni generali d'uso</a>
             </p>
         </div>
     </section>
