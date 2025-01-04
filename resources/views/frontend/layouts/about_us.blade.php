@@ -73,7 +73,7 @@
 
     <!-- who we are section styles -->
     <section class="who-we-are-container">
-        <h2 class="section-title">What We Do</h2>
+        <h2 class="section-title">Cosa facciamo</h2>
         <div class="one-startup-desc">
             <p>
                 {{ $cms ? $cms[7]->title : '' }}
@@ -92,7 +92,7 @@
         <!-- commitment img -->
 
         @php
-            $cms = App\Models\Cms::get();
+            $cms = App\Models\CMS::get();
         @endphp
         <div>
             <img src="{{ asset($cms[8]->image_url) }}" alt="" />

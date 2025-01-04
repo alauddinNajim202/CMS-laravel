@@ -22,7 +22,7 @@
             <div class="hero-content">
                 <h1 class="hero-title">
                     @php
-                        $cms = App\Models\Cms::get();
+                        $cms = App\Models\CMS::get();
                         // dd($cms);
                     @endphp
                     {{ $cms ? $cms[1]->title : '' }}
@@ -71,7 +71,7 @@
         <!-- commitment img -->
 
         @php
-            $cms = App\Models\Cms::get();
+            $cms = App\Models\CMS::get();
         @endphp
         <div>
             <img src="{{asset($cms[8]->image_url)}}" alt="" />
